@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Найближчі вокзали</title>
+  <link rel="icon" type="image/png" href="favicon.JPG">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 Шапка -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Логотип" class="logo">
+      <span>Станція Жовті Води</span>
+    </div>
+    <ul class="nav-right">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li class="dropdown">
+        <a href="#">Послуги</a>
+        <ul class="dropdown-content">
+          <li><a href="rozklad.html">Розклад поїздів</a></li>
+          <li><a href="vokzaly.html">Найближчі вокзали</a></li>
+          <li><a href="zamovlennya.html">Замовлення квитків</a></li>
+        </ul>
+      </li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 Фонове зображення -->
+  <section class="hero rozklad-hero">
+    <div class="hero-content">
+      <h1>Найближчі вокзали</h1>
+    </div>
+  </section>
+
+  <!-- 🔹 Вміст сторінки -->
+  <section class="station-info">
+    <div class="station">
+      <h2>Кривий Ріг-Головний</h2>
+      <iframe src="https://www.google.com/maps?q=Кривий+Ріг-Головний&output=embed" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="station">
+      <h2>П’ятихатки-Стикова</h2>
+      <iframe src="https://www.google.com/maps?q=П’ятихатки+Стикова&output=embed" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="station">
+      <h2>Рокувата</h2>
+      <iframe src="https://www.google.com/maps?q=Рокувата+станція&output=embed" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- 🔹 Підвал -->
+  <footer>
+    <p>Щоб отримати консультацію, зателефонуйте нам або напишіть:</p>
+    <p>тел. 095-525-55-55 | ел. адреса: <a href="mailto:uz@gmail.ua">uz@gmail.ua</a></p>
+  </footer>
+
+</body>
+</html>

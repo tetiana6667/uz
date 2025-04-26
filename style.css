@@ -1,0 +1,402 @@
+/* Основні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .hero {
+    background: url('my1.jpeg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    filter: blur();
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-text {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    background-color: #4b8b3b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #3a6b2d;
+  }
+  
+  .services-intro {
+    background-color: #f1f1f1;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .services-intro h2 {
+    font-size: 2.5rem;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .service {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .service img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer a {
+    color: #4b8b3b;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+/* ===== Навігація ===== */
+.main-nav {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #4b8b3b;
+}
+
+/* ===== Сторінка Про нас ===== */
+.about-page {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.about-page h2 {
+  text-align: center;
+}
+
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.about-images img {
+  width: 45%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-images img {
+    width: 100%;
+  }
+}
+
+
+
+/* ===== Загальна шапка для всіх сторінок ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0rem 2rem;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #4b8b3b;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-right {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-right li {
+  position: relative;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-right a:hover {
+  color: #4b8b3b;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #444;
+  min-width: 190px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.dropdown-content li {
+  padding: 0.5rem;
+}
+
+.dropdown-content a {
+  color: white;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #4b8b3b;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+/* 🔸 Оновлене фонове зображення лише для сторінки розкладу */
+.hero.rozklad-hero {
+  background: url('rozklad.jpg') no-repeat center center/cover;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* 🔸 Кнопки одна під одною */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+/* 🔸 Зменення відступу під текстом */
+.hero-text {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  margin-bottom: 1rem;
+}
+
+.station-info {
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+
+.station h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.station {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.station iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-small {
+  background: url('my1.jpeg') no-repeat center center/cover;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.ticket-order {
+  text-align: center;
+  padding: 2rem;
+}
+
+.button-wrapper {
+  margin-bottom: 1.2rem; /* Відстань між кнопкою і текстом */
+}
+
+.ticket-order .button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+}
+
+.ticket-description {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contacts-hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.contacts-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contacts-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4b8b3b;
+}
+
+.contacts-section p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.contacts-map {
+  margin-top: 2rem;
+}
+
+.contacts-map iframe {
+  width: 80%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
